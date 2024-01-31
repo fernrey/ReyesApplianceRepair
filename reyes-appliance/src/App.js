@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      <footer className="footer"> footer</footer>
+      <footer className="footer"> Reyes Appliance Repair </footer>
     </div>
   );
 }

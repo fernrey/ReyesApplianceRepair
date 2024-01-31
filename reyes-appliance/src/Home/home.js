@@ -14,27 +14,33 @@ import appliances from '../images/appliances.jpg';
 const info = [
     {
         image: appliance,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        title: "Refrigerators",
+        content: 'We ensure your kitchen remains efficiently equipped, providing a reliable foundation for everyday convenience and freshness'
     },
     {
         image: appliance2,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        title: "Air Conditioning",
+        content: "We ensure your home stays cool and comfortable, running smoothly and efficiently."
     },
     {
         image: appliance3,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        title: "Stove",
+        content: "Wwe ensure your kitchen operates seamlessly and efficiently, fostering a delightful culinary experience"
     },
     {
         image: appliance4,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        title: "Washer",
+        content: "We ensure your laundry routine operates seamlessly and efficiently, allowing you to enjoy a consistently clean and well-organized home."
     },
     {
         image: appliance5,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        title: "Dryer",
+        content: "We ensure your laundry routine operates seamlessly and efficiently, providing consistently dried clothes for a well-maintained home"
     },
     {
         image: appliance6,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        title: "Dishwasher",
+        content: "We ensure your kitchen stays effortlessly clean and efficient, fostering a hygienic and harmonious home environment"
     },
 ];
 
@@ -45,14 +51,16 @@ function Home() {
 
                 <div className='title-info'>
                     <img className="image-title" src={appliances} />
-                    <div className="title-top">
-                    </div>
-                    <div className="title-intro">
-                        <p>COMMITED TO FIXING ALL YOUR HOME APPLIANCES <br />  
-                            LOCATED ALL OVER NYC
-
-                            SAMPLE TEXT ETC ETC
-                        </p>
+                    <div className="title-card">
+                        <div className="title-top">
+                            REYES APPLIANCE REPAIR
+                        </div>
+                        <div className="title-intro">
+                            Elevate your home's efficiency with our family-owned appliance repair service. <br />
+                            From fridges to ovens, we blend professionalism and reliability,
+                            offering honest solutions for a smoothly running household
+                            – because your comfort is our business!
+                        </div>
                         <button className="contact"> Call Us</button>
                         <button className="learn-more"> Email Us</button>
                     </div>
@@ -97,6 +105,7 @@ function Home() {
                         <div className="cards-content">
                             <img className="image-card" src={result.image} alt="image" />
                             <div className="upper-card">
+                                <h3>{result.title}</h3>
                                 {result.content}
                             </div>
                             <div className="lower-card">
