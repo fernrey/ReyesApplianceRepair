@@ -17,11 +17,7 @@ const info = [
         title: "Refrigerators",
         content: 'We ensure your kitchen remains efficiently equipped, providing a reliable foundation for everyday convenience and freshness'
     },
-    {
-        image: appliance2,
-        title: "Air Conditioning",
-        content: "We ensure your home stays cool and comfortable, running smoothly and efficiently."
-    },
+   
     {
         image: appliance3,
         title: "Stove",
@@ -48,7 +44,6 @@ function Home() {
     return (
         <div className='homePage'>
             <section className="upper-header">
-
                 <div className='title-info'>
                     <img className="image-title" src={appliances} />
                     <div className="title-card">
