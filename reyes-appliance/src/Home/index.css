@@ -81,7 +81,9 @@
     transition-duration: 0.2s;
     text-align: center;
 }
-
+.anchor {
+    text-decoration: none;
+}
 .contact:hover {
     color: #5F5F5F;
     background-color: #ffffff;
@@ -196,6 +198,9 @@
 
 .middle-button:hover {
     transform: scale(1.1);
+    background-color: #ffffff;
+    border: solid #338B9A;
+    color: #338B9A;
 }
 
 .middle-image {
@@ -218,12 +223,6 @@
     text-align: center;
     justify-content: center;
     margin: auto;
-}
-
-@media (min-width: 1000px) {
-    .cards {
-        width: 1000px;
-    }
 }
 
 .cards-content {
@@ -285,4 +284,56 @@
 
 .bottom-page span {
     color: #338B9A;
+}
+
+@media (max-width: 1200px) {
+    .middle-Inner {
+        height: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .cards {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 745px) {
+    .title-card {
+        width: 600px;
+    }
+
+    .title-top {
+        width: auto;
+    }
+
+    .title-intro {
+        width: auto;
+    }
+}
+
+@media (max-width: 670px) {
+    .title-card {
+        width: 500px;
+    }
+}
+
+@media (max-width: 540px) {
+    .title-card {
+        width: 350px;
+    }
+
+    .title-info {
+        height: 700px;
+    }
+
+    .image-title {
+        height: 700px;
+    }
+}
+
+@media (max-width: 455px) {
+    .middle-image {
+        width: 375px;
+    }
 }

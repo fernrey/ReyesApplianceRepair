@@ -17,7 +17,7 @@ const info = [
         title: "Refrigerators",
         content: 'We ensure your kitchen remains efficiently equipped, providing a reliable foundation for everyday convenience and freshness'
     },
-   
+
     {
         image: appliance3,
         title: "Stove",
@@ -56,8 +56,8 @@ function Home() {
                             offering honest solutions for a smoothly running household
                             – because your comfort is our business!
                         </div>
-                        <button className="contact"> Call Us</button>
-                        <button className="learn-more"> Email Us</button>
+                        <a href="tel:347-256-0951" className="anchor"> <button className="contact"> Call Us </button> </a>
+                        <a href="mailto:reyesappliancerepair.com" className="anchor"><button className="learn-more"> Email Us</button> </a>
                     </div>
                 </div>
             </section>
@@ -77,7 +77,7 @@ function Home() {
                         </div>
                         <h3>WE ARE DEDICATED TO PROVIDING HONEST QUALITY APPLIANCE REPAIR SERVICES. WE TAKE PRIDE IN OFFERING HONEST & FAIR ASSESSMENTS, FOR ALL YOUR MAJOR HOME APPLIANCE REPAIR NEEDS. WHICH INCLUDE REFRIGERATORS, CLOTHES WASHERS AND DRYERS, STOVES, OVENS, DISHWASHERS. YOU NAME IT!
                             CALL FOR RELIABLE SERVICE!</h3>
-                        <button className="middle-button">Call (347)-256-0951</button>
+                        <a href="tel:347-256-0951" className="anchor"><button className="middle-button">Call (347)-256-0951</button></a>
                     </div>
 
                     <div className="right-content">

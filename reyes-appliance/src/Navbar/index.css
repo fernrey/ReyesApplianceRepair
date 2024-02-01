@@ -8,7 +8,7 @@
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     align-items: center;
-    background-color: #4AB595;
+    background: linear-gradient(0deg, rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, .75) 100%);
 }
 
 .Hamburger {
@@ -77,14 +77,17 @@
     }
 
     .burger-open {
-        display: inline;
+        display: flex;
+        justify-content: center;
         background-color: #4AB595;
         height: 30vh;
         width: 100vw;
         left: 0%;
         position: absolute;
         transition: all .5s linear;
-        transform: translateY(0px, 50px);
+        transform: translateY(0, 50px);
+        background: linear-gradient( rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, 1) 75%);
+        margin-top: 25px;
     }
 
     .burger-close {
@@ -95,7 +98,9 @@
         text-decoration: none;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         font-size: 32px;
+        padding: 10px;
     }
 
     .innerNav-mobile a {
