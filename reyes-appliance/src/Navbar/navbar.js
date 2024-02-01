@@ -48,9 +48,10 @@ function Navbar() {
                                     REVIEWS
                                 </NavLink>
 
-                            </ul> </div>
+                            </ul>
+                        </div>
                             :
-                            <div className="burger-close" />
+                            <div className="Burger close" />
                     }
                 </div>
             </nav>
