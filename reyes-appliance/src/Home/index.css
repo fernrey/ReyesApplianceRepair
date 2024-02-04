@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.image-title {
+.img-title {
     object-fit: cover;
     width: 100%;
     height: 550px;
@@ -203,7 +203,7 @@
     color: #338B9A;
 }
 
-.middle-image {
+.middle-img {
     width: 450px;
 }
 
@@ -327,13 +327,13 @@
         height: 700px;
     }
 
-    .image-title {
+    .img-title {
         height: 700px;
     }
 }
 
 @media (max-width: 455px) {
-    .middle-image {
+    .middle-img {
         width: 375px;
     }
 }

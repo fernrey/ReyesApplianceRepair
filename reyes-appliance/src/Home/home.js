@@ -1,14 +1,12 @@
 import './index.css';
 import React from 'react';
 
-import image from '../images/image.png';
+import main from '../images/main.png';
 import appliance from '../images/appliance.png';
-import appliance2 from '../images/appliance2.png';
 import appliance3 from '../images/appliance3.png';
 import appliance4 from '../images/appliance4.png';
 import appliance5 from '../images/appliance5.png';
 import appliance6 from '../images/appliance6.png';
-import maintenance from '../images/maintenence-guy.jpg';
 import appliances from '../images/appliances.jpg';
 
 const info = [
@@ -21,7 +19,7 @@ const info = [
     {
         image: appliance3,
         title: "Stove",
-        content: "Wwe ensure your kitchen operates seamlessly and efficiently, fostering a delightful culinary experience"
+        content: "We ensure your kitchen operates seamlessly and efficiently, fostering a delightful culinary experience"
     },
     {
         image: appliance4,
@@ -45,7 +43,7 @@ function Home() {
         <div className='homePage'>
             <section className="upper-header">
                 <div className='title-info'>
-                    <img className="image-title" src={appliances} />
+                    <img className="img-title" src={appliances} alt="appliance pic"/>
                     <div className="title-card">
                         <div className="title-top">
                             REYES APPLIANCE REPAIR
@@ -57,7 +55,7 @@ function Home() {
                             – because your comfort is our business!
                         </div>
                         <a href="tel:347-256-0951" className="anchor"> <button className="contact"> Call Us </button> </a>
-                        <a href="mailto:reyesappliancerepair.com" className="anchor"><button className="learn-more"> Email Us</button> </a>
+                        <a href="mailto:reyesappliancerepair@gmail.com" className="anchor"><button className="learn-more"> Email Us</button> </a>
                     </div>
                 </div>
             </section>
@@ -81,13 +79,13 @@ function Home() {
                     </div>
 
                     <div className="right-content">
-                        <img className="middle-image" src={image} alt="image of appliance" />
+                        <img className="middle-img" src={main} alt="appliance" />
                     </div>
                 </div>
                 <div className="bottom-middle">
                     <div className="bottom-text">
-                        <h1>OUR DIAGNOSTIC FEE IS FREE FOR THE FIRST TIME. </h1>
-                        <h3>*$49.99 WHICH CAN BE WAIVED AFTER ANY REPAIR*</h3>
+                        <h1>OUR DIAGNOSTICE FEE IS $64.99. </h1>
+                        <h3>*WHICH CAN BE WAIVED AFTER ANY REPAIR*</h3>
                     </div>
                 </div>
             </section>
