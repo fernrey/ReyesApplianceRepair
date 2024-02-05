@@ -5,7 +5,8 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-family: helvetica;
     text-align: center;
     align-items: center;
     background: linear-gradient(0deg, rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, .75) 100%);
@@ -21,11 +22,12 @@
 }
 
 .site-title {
+    display: flex;
     text-decoration: none;
     color: #ffffff;
-    font-size: 32px;
     border: solid transparent;
     transition-duration: .1s;
+    align-items: center;
 }
 
 .site-title:Hover {
@@ -34,7 +36,7 @@
 
 .innerNav a {
     list-style: none;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .innerNav a {
@@ -51,8 +53,15 @@
 }
 
 .navbar a.active {
-    border-bottom: solid #ffffff;
+    
     color: #ffffff;
+}
+
+.Logo {
+    width: 6em;
+    height: 4em;
+    caret-color: transparent;
+    
 }
 
 @media (max-width: 1020px) {
@@ -62,6 +71,12 @@
 
     .navbar {
         display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .navbar a.active {
+        border: none;
     }
 
     .innerNav {
@@ -80,20 +95,37 @@
         justify-content: center;
         height: 30vh;
         width: 100vw;
+        margin-top: 10vh;
+        right: 0%;
+        top: 0;
+        position: absolute;
+        background: linear-gradient( rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, 1) 75%);
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    .burger-close {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 0vh;
+        width: 100vw;
         margin-top: 50px;
         right: 0%;
         top: 0;
         position: absolute;
         background: linear-gradient( rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, 1) 75%);
-        
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        pointer-events: none;
     }
+
 
     .innerNav-mobile {
         text-decoration: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 32px;
+        font-size: 28px;
         padding: 10px;
     }
 
@@ -103,6 +135,23 @@
         margin: 10px;
         justify-content: space-evenly;
         border: solid transparent;
-        transition-duration: .1s;
     }
+
+    .Logo {
+        width: 5em;
+        height: 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .burger-open {
+        margin-top: 5.5rem;
+        height: 40vh;
+    }
+
+    .Logo {
+        width: 7rem;
+        height: 5rem;
+    }
+
 }

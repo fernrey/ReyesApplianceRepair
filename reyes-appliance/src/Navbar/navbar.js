@@ -4,6 +4,8 @@ import { useState } from "react";
 import "./index.css";
 import Burger from "../Burger/burger";
 
+import Logo from '../images/reyesappliancelogowhite.png';
+
 function Navbar() {
     const [hamburgerOpen, SethambuerOpen] = useState(false);
 
@@ -14,7 +16,7 @@ function Navbar() {
     return (
         <header className="navHeader">
             <nav className="navbar">
-                <NavLink to="/" className="site-title">REYES APPLIANCE REPAIR</NavLink>
+                <NavLink to="/" className="site-title"><img src={Logo} alt="Reyes Appliance Repair" className="Logo"/></NavLink>
                 <ul className="innerNav" >
                     <NavLink to="/About">
                         ABOUT
@@ -51,7 +53,7 @@ function Navbar() {
                             </ul>
                         </div>
                             :
-                            <div className="Burger close" />
+                            <div className="burger-close" />
                     }
                 </div>
             </nav>

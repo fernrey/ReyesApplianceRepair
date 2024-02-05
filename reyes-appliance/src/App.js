@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from './Navbar/navbar';
 import Home from './Home/home';
+import Footer from './Footer/footer';
+import Contact from './Contact/contact';
 
 function App() {
   return (
@@ -10,8 +12,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Contact" element={ <Contact/>} />
       </Routes>
-      <footer className="footer"> Reyes Appliance Repair </footer>
+      <Footer />
     </div>
   );
 }
