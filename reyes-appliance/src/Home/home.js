@@ -43,10 +43,10 @@ function Home() {
         <div className='homePage'>
             <section className="upper-header">
                 <div className='title-info'>
-                    <img className="img-title" src={appliances} alt="appliance pic"/>
+                    <img className="img-title" src={appliances} alt="appliance pic" />
                     <div className="title-card">
                         <div className="title-top">
-                            REYES APPLIANCE REPAIR
+                            Reyes Appliance Repair
                         </div>
                         <div className="title-intro">
                             Elevate your home's efficiency with our family-owned appliance repair service. <br />
@@ -73,8 +73,13 @@ function Home() {
                         <div className="left-text">NEED HELP
                             <span className="right-text"> FINDING THE PROBLEM?</span>
                         </div>
-                        <h3>WE ARE DEDICATED TO PROVIDING HONEST QUALITY APPLIANCE REPAIR SERVICES. WE TAKE PRIDE IN OFFERING HONEST & FAIR ASSESSMENTS, FOR ALL YOUR MAJOR HOME APPLIANCE REPAIR NEEDS. WHICH INCLUDE REFRIGERATORS, CLOTHES WASHERS AND DRYERS, STOVES, OVENS, DISHWASHERS. YOU NAME IT!
-                            CALL FOR RELIABLE SERVICE!</h3>
+                        <p>
+                            Household appliances quietly champion our daily comfort, efficiently managing essential tasks to elevate our quality of life. However, amidst the hustle of our routines, we often underestimate the toll of wear and tear on these indispensable devices, only realizing their impact when they malfunction.
+                            Imagine your refrigerator losing its cooling prowess, or your stove's heating function taking an unscheduled break. Dysfunctional appliances can disrupt the seamless operation of daily activities.
+                        </p>
+                        <p>
+                        In these challenging moments, turn to the expertise of our family owned appliance repair service. We are here to transform disruptions into efficient solutions, ensuring your household appliances work seamlessly once again.
+                        </p>
                         <a href="tel:347-256-0951" className="anchor"><button className="middle-button">Call (347)-256-0951</button></a>
                     </div>
 
