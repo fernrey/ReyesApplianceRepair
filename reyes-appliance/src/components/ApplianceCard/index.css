@@ -1,0 +1,51 @@
+/* ApplianceCard.css */
+
+.appliance-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 2px 5px 15px #4e4e4e;
+    transition: transform 0.3s ease;
+  }
+  
+  .appliance-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .appliance-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .appliance-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .appliance-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #5F5F5F;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  
+  .appliance-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #5F5F5F;
+  }
+  
+  @media (max-width: 480px) {
+    .appliance-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }

@@ -1,0 +1,121 @@
+.container {
+    width: 100%;
+    height: 600px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter',sans-serif;
+}
+
+.container h1 {
+    color: #2D8071;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.container h2 {
+    color: #5F5F5F;
+    font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.left-side {
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 10px;
+
+}
+
+.label-form {
+    padding: 10px 0;
+    caret-color: transparent;
+    font-weight: 600;
+ 
+}
+
+.form-input {
+    height: 25px;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: #b8b8b8;
+    outline-color: #37BCBF;
+   
+}
+
+
+.form-input.text {
+    height: 150px;
+}
+
+.form-submit {
+    margin: 10px auto;
+    border-radius: 16px;
+    border: none;
+    background-color: #2D8071;
+    color: #ffff;
+    width: 200px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 5px 10px;
+}
+
+.form-submit:active {
+    box-shadow: 2px 2px 5px #b8b8b8;
+    transform: translateY(2px);
+}
+
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #4AB595 0%, #237380 75%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: end;
+    width: 350px;
+    height: 475px;
+    margin: 10px;
+    border-radius: 16px;
+
+}
+
+.right-header {
+    color: #ffff;
+    font-size: 32px;
+    margin: 20px;
+    border-bottom: solid #ffff;
+}
+
+.right-title {
+    color: #ffff;
+    margin: 20px;
+}
+
+.inner-title {
+    font-size: 28px;
+}
+
+@media (max-width: 1000px) {
+    .form-container {
+        display: none;
+    }
+}
