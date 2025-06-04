@@ -10,7 +10,7 @@
     font-weight: 600;
     text-align: center;
     align-items: center;
-    background: #4AB595;
+    background: #2D8071;
 }
 
 .Hamburger {
@@ -20,6 +20,7 @@
 .innerNav {
     text-decoration: none;
     display: flex;
+    align-items: center;
 }
 
 .site-title {
@@ -65,6 +66,21 @@
     
 }
 
+.nav-contact-button {
+    padding: 0.875rem 2.75rem;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #E67D50;
+    font-weight: 600;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+.nav-contact-button:hover {
+    opacity: .9;
+    transform: translateY(-2px);
+}
+
 @media (max-width: 1020px) {
     .site-title {
         font-size: 28px;
@@ -73,7 +89,7 @@
     .navbar {
         display: flex;
         justify-content: space-between;
-        padding: 5px;
+        padding: 10px;
     }
 
     .navbar a.active {
@@ -100,7 +116,7 @@
         right: 0%;
         top: 0;
         position: absolute;
-        background: linear-gradient( rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, 1) 75%);
+        background: #2D8071;
         opacity: 1;
         transition: all .3s ease-in-out;
     }
@@ -110,8 +126,7 @@
         flex-flow: column nowrap;
         height: 0vh;
         width: 100vw;
-        margin-top: 50px;
-        right: 0%;
+        right: 0;
         top: 0;
         position: absolute;
         background: linear-gradient( rgba(74, 181, 149, 1) 0%, rgba(45, 116, 128, 1) 75%);
@@ -139,7 +154,7 @@
     }
 
     .Logo {
-        width: 5em;
+        width: 4em;
         height: 3em;
     }
 }
